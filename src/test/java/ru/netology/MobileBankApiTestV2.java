@@ -25,6 +25,5 @@ class MobileBankApiTestV2 {
           .contentType(ContentType.JSON)
           .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
           .body("[1].currency", equalTo("USD"));
-      ;
     }
 }
